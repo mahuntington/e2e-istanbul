@@ -1,0 +1,13 @@
+{
+  "name": "e2e-with-coverage",
+  "version": "0.0.0",
+  "description": "node packages \texpress",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
