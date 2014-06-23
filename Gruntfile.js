@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           keepalive: true
         }
       }
-    },
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
