@@ -31,6 +31,13 @@ module.exports = function(grunt) {
           dest: 'prod/'
         }]
       }
+    },
+    makeReport: {
+      src: 'coverage/coverage.json',
+      options: {
+        type: 'lcov',
+        dir: 'coverage'
+      }
     }
   });
 
@@ -40,6 +47,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-istanbul');
 
   grunt.registerTask('server', ['connect']);
-  grunt.registerTask('dev', ['clean','copy','instrument'])
-  // Need jasmine-node and istanbul at global level
+  grunt.registerTask('dev', ['clean','copy','instrument']);
+  grunt.registerTask('report', ['makeReport']);
+  // Need jasmine-node at global level
 };
