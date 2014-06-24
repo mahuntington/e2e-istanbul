@@ -7,8 +7,8 @@ var driver = new webdriver.Builder().
     build();
 
 describe('Main page', function () {
+	driver.get('http://localhost:9001/');
 	it('should have title of Test Title', function (done) {
-		driver.get('http://localhost:9001/');
 		driver.getTitle().then(function(title) {
 			expect(title).toBe('Test Title');
 		});
@@ -27,7 +27,6 @@ describe('Main page', function () {
 	    driver.executeScript("return window.__coverage__;").then(function (obj) {
 			fs.writeFile('coverage/coverage.json', JSON.stringify(obj));
 			driver.quit();
-			done();
 		});
 	});
 });
