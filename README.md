@@ -1,5 +1,17 @@
 # Example of End To End Testing Using Selenium Webdriver and Jasmine Tests With Istanbul Code Coverage
 
+## Goal
+
+- Inside of `src` we have a very basic website with some really simple JS
+    - The JS creates two click handlers:
+        - when an `a` tag is clicked, append a div with some text in it to the body
+        - when a `div` tag is clicked, add some text to the body
+- We want to set up tests that will:
+    - Test that the page title is `Test Title`
+    - Test that clicking on a link will indeed create a div with the text `added through jquery`
+- Lastly, we want to create a coverage report that will show how much of our JS code was tested
+    - **NOTE:** We intentionally omit testing the JS code regarding clicking on a `div` tag, so that we can see in our coverage that it was not run
+
 ## Installation
 
 ### Global Installation
