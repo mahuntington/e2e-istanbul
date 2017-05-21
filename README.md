@@ -5,6 +5,7 @@
 1. Clone this repo
 1. cd into local repo directory
 1. run `npm install`
-1. `grunt dev`
-1. `jasmine-node specs/test-spec.js`
-1. `grunt report`
+1. run `grunt dev`
+1. in a different terminal run `grunt server`
+1. run `jasmine-node specs/test-spec.js`
+1. run `grunt report`
